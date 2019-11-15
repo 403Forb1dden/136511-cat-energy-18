@@ -1,0 +1,31 @@
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages {
+  margin-bottom: 37px;
+}
+
+.advantages__header {
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: normal;
+  margin-bottom: 35px;
+}
+
+.advantages-list {
+  @include reset-list;
+}
+
+.advantages-list__item {
+  @include reset-list;
+  margin-left: 80px;
+  margin-bottom: 30px;
+}
+
+.advantages-list__text {
+  @include reset-list;
+}

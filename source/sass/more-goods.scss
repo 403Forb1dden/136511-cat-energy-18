@@ -1,0 +1,26 @@
+
+.more-goods {
+  @include reset-list;
+  padding: 27px 20px 25px 20px;
+}
+
+.more-goods__header {
+  @include reset-list;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: normal;
+}
+
+.more-goods__text {
+  @include reset-list;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.more-goods__button {
+  color: $greyish-brown;
+}
