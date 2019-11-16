@@ -1,0 +1,36 @@
+.intro-program {
+  margin-bottom: 22px;
+}
+
+.intro-program__wrapper {
+  width: 320px;
+  height: 305px;
+  background: $background-green url("../img/index-background-mobile@1x.jpg") no-repeat 0 0;
+  color: #ffffff;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.intro-program__header {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
+  text-align: center;
+  padding-top: 27px;
+}
+
+.intro-program__message {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+.intro-program__image {
+  margin-top: -140px;
+  margin-left: 20px;
+}
+
+.intro-program__button {
+  margin-left: 20px;
+  margin-bottom: 22px;
+}
