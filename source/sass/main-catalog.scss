@@ -1,9 +1,23 @@
 
-.catalog-header {
+.main-catalog__header {
   @include reset-list;
   font-size: 36px;
   line-height: 36px;
   margin-bottom: 36px;
   padding-left: 2px;
+  font-weight: normal;
 }
 
+@media (min-width: $tablet-width) {
+  .main-catalog__header {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-catalog__header {
+    margin-bottom: 14px;
+  }
+}

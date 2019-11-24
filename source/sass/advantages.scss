@@ -1,17 +1,12 @@
 
-@mixin reset-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 .advantages {
-  margin-bottom: 37px;
+  margin-bottom: 47px;
 }
 
 .advantages__header {
+  margin-top: 0;
   font-size: 36px;
-  line-height: 60px;
+  line-height: 36px;
   font-weight: normal;
   margin-bottom: 35px;
 }
@@ -28,4 +23,56 @@
 
 .advantages-list__text {
   @include reset-list;
+  font-family: "Arial", sans-serif;
+  color: $greyish-brown;
 }
+
+@media (min-width: $tablet-width) {
+  .advantages__wrapper {
+    width: 640px;
+    min-height: 555px;
+  }
+
+  .advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    min-height: 555px;
+  }
+
+  .advantages-list__item {
+    width: 245px;
+    min-height: 235px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+
+  .advantages__header {
+    margin-bottom: 60px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .advantages-list__text {
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 65px;
+    padding-right: 25px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__wrapper {
+    width: 1220px;
+    min-height: 235px;
+  }
+
+  .advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 235px;
+  }
+}
+
