@@ -21,3 +21,128 @@
     margin-bottom: 14px;
   }
 }
+
+.catalog-item__header {
+  @include reset-list;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.catalog-item__description-line {
+  @include reset-list;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: "Arial", sans-serif;
+  color: $greyish-brown;
+}
+
+.catalog-item__label {
+  @include reset-list;
+}
+
+.catalog-item__value {
+  @include reset-list;
+}
+
+.main-catalog__list {
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+
+  @include reset-list;
+}
+
+.catalog-item {
+  min-width: 280px;
+  min-height: 210px;
+  padding-bottom: 25px;
+}
+
+.main-catalog__item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog-item__image {
+  min-width: 140px;
+}
+
+.catalog-item__description {
+  @include reset-list;
+  width: 140px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-catalog__list {
+    min-width: 708px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 70px;
+  }
+
+  .catalog-item {
+    min-height: 431px;
+    min-width: 324px;
+    margin-top: 140px;
+    padding-left: 38px;
+    padding-right: 37px;
+    padding-bottom: 40px;
+    background-color: $color-grey;
+  }
+
+  .main-catalog__item--more {
+    background-color: #ffffff;
+  }
+
+  .main-catalog__item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .catalog-item__image {
+    min-width: 161px;
+  }
+
+  .catalog-item__description {
+    @include reset-list;
+  }
+
+  .catalog-item__header {
+    font-size: 20px;
+  }
+
+  .catalog-item__description-line {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .catalog-item__button {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-catalog__list {
+    min-width: 1220px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: normal;
+    margin-bottom: 78px;
+  }
+
+  .catalog-item {
+    min-height: 431px;
+    min-width: 245px;
+    margin-top: 142px;
+    margin-right: 80px;
+  }
+
+  .catalog-item:nth-child(4n) {
+    margin-right: 0;
+  }
+}
