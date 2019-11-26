@@ -3,54 +3,52 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="page-header container">
-  <a class="page-header__logo" href="index.html">
-    <img src="img/logo-mobile.svg" width="190" height="38" alt="Кэт энерджи">
-  </a>
-  <nav class="main-nav">
-    <button class="main-nav__toggle visually-hidden" type="button">Открыть меню</button>
-    <div class="main-nav__wrapper">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
-          <a href="index.html">Главная</a>
+<header class="page-header">
+  <div class="page-header__wrapper container">
+    <a class="page-header__logo" href="index.html">
+      <img src="img/logo-mobile.svg" width="190" height="38" alt="Кэт энерджи">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle visually-hidden" type="button">Открыть меню</button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="index.html">Главная</a>
         </li>
-        <li class="site-list__item">
-          <a href="catalog.html">Каталог продукции</a>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="site-list__item site-list__item--active">
-          <a>Подбор программы</a>
+        <li class="main-nav__item main-nav__item--active">
+          <a class="main-nav__link">Подбор программы</a>
         </li>
       </ul>
-    </div>
-  </nav>
+    </nav>
+  </div>
 </header>
 
-
-<footer class="page-footer">
-  <div class="page-footer__wrapper">
-    <a class="page-footer__logo-text">
+<footer class="footer">
+  <div class="footer__wrapper container">
+    <a class="footer__logo-energy">
       <img src="img/logo-footer.svg" width="128" height="24" alt="Кэт энерджи">
     </a>
-    <div class="page-footer__social">
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a class="social-list__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Контакте</a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__academy footer-academy">
-      <a class="footer-academy__name" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      <a class="footer-academy__logo">
-        <svg class="academy__svg"  width="27" height="34"></svg>
+    <ul class="footer__social">
+      <li class="footer__social-item">
+        <a class="footer__social-link footer__social-link--vkontakte" href="https://vk.com/htmlacademy">Мы в Контакте</a>
+      </li>
+      <li class="footer__social-item">
+        <a class="footer__social-link footer__social-link--instagram" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+      </li>
+      <li class="footer__social-item">
+        <a class="footer__social-link footer__social-link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+      </li>
+    </ul>
+    <div class="footer__logo-academy">
+      <a class="footer__name-academy" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <a class="footer__img-academy">
+        <img src="https://via.placeholder.com/27x34" width="27" height="34" alt="html logo">
       </a>
     </div>
   </div>
