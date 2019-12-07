@@ -55,7 +55,8 @@ img {
 
 .visually-hidden,
 input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+input[type="radio"].visually-hidden,
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
 
   width: 1px;
@@ -72,7 +73,23 @@ input[type="radio"].visually-hidden {
 }
 
 .button {
+  @include reset-list;
   text-transform: uppercase;
   color: #ffffff;
   background-color: $main-green;
+  width: 280px;
+  height: 40px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: center;
+  padding-top: 11px;
+
+  &:hover,
+  &:focus {
+    background-color: $color-button-hover-green;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

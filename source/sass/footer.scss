@@ -12,14 +12,54 @@
 .footer__logo-energy {
   align-self: center;
   padding-bottom: 31px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &--active {
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
+
+    &:active {
+      opacity: 1;
+    }
+  }
 }
 
 .footer__social {
   @include reset-list;
   display: flex;
   flex-wrap: nowrap;
-  padding-top: 26px;
-  padding-bottom: 24px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 82px 18px 73px;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.footer__social-item {
+  min-height: 19px;
+}
+
+.footer__social-link svg {
+  fill: $color-brownish-grey;
+
+  &:hover,
+  &:focus {
+    fill: $main-green;
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
 }
 
 .footer__logo-academy {
@@ -29,13 +69,41 @@
   align-items: center;
   font-family: "Arial", sans-serif;
   color: $greyish-brown;
+  min-height: 34px;
+
+  &:hover,
+  &:focus {
+    .footer__img-academy {
+      fill: $main-green;
+    }
+  }
+
+  &:active {
+    .footer__img-academy {
+      opacity: 0.3;
+    }
+
+    .footer__name-academy {
+      opacity: 0.3;
+    }
+  }
+}
+
+.footer__name-academy {
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.footer__img-academy {
+  width: 27px;
+  height: 34px;
+  fill: $color-brownish-grey;
 }
 
 @media (min-width: $tablet-width) {
   .footer__wrapper {
     min-height: 150px;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     padding-left: 30px;
     padding-right: 30px;
@@ -43,14 +111,36 @@
 
   .footer__logo-energy {
     @include reset-list;
+    margin-right: 155px;
   }
 
   .footer__social {
     @include reset-list;
+    width: 125px;
+    border: none;
+    margin-right: 138px;
+  }
+
+  .footer__social-link {
+    &--vkontakte svg {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--instagram svg {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--facebook svg {
+      width: 14px;
+      height: 28px;
+    }
   }
 
   .footer__logo-academy {
     @include reset-list;
+    width: 162px;
   }
 }
 
@@ -58,5 +148,13 @@
   .footer__wrapper {
     padding-left: 110px;
     padding-right: 110px;
+  }
+
+  .footer__logo-energy {
+    margin-right: 412px;
+  }
+
+  .footer__social {
+    margin-right: 394px;
   }
 }

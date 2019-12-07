@@ -1,6 +1,6 @@
 
 .main-nav__list {
-  list-style: none;
+  @include reset-list;
 }
 
 .main-nav__item {
@@ -8,6 +8,26 @@
   padding-top: 24px;
   padding-bottom: 24px;
   text-transform: uppercase;
+  text-align: center;
+}
+
+.main-nav__link {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__item--active a {
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 1;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -16,7 +36,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    width: 460px;
+    width: 440px;
     margin-top: 47px;
   }
 
@@ -24,6 +44,13 @@
     padding: 0;
     margin: 0;
     font-size: 18px;
+
+    &--active {
+      .main-nav__link {
+        padding-bottom: 5px;
+        border-bottom: 2px solid $main-green;
+      }
+    }
   }
 }
 
@@ -35,5 +62,105 @@
 
   .main-nav__item {
     font-size: 20px;
+
+    &--active {
+      .main-nav__link--white-underline {
+        border-bottom: 2px solid #ffffff;
+      }
+    }
+  }
+}
+
+
+@media (max-width: $mobile-width-only) {
+  .main-nav {
+    position: relative;
+  }
+
+  .main-nav__item {
+    border-top: 1px solid $color-border-grey;
+  }
+
+  .page-header__wrapper {
+    border-bottom: 1px solid $color-border-grey;
+  }
+
+  .main-nav__toggle {
+    position: absolute;
+    top: 7px;
+    right: 2px;
+    z-index: 2;
+
+    display: block;
+    width: 60px;
+    height: 50px;
+
+    background-color: #ffffff;
+
+    cursor: pointer;
+    border: none;
+  }
+
+  .main-nav--closed .main-nav__toggle::before {
+    content: "";
+
+    position: absolute;
+    top: 15px;
+    left: 17px;
+
+    width: 25px;
+    height: 2px;
+
+    background-color: #000000;
+    box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+  }
+
+  .main-nav--closed .main-nav__toggle:active::before {
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 0 0 rgba(0, 0, 0, 0.3), 0 16px 0 0 rgba(0, 0, 0, 0.3);
+  }
+
+  .main-nav--opened .main-nav__toggle {
+    top: 7px;
+    right: 2px;
+
+    &::before,
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 24px;
+      left: 18px;
+
+      width: 24px;
+      height: 2px;
+
+      background-color: #000000;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:active::before,
+    &:active::after {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .main-nav--closed .main-nav__item {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__item {
+    display: block;
   }
 }
