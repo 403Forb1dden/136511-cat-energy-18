@@ -1,7 +1,9 @@
+@import "../../node_modules/normalize.scss/normalize.scss";
+@import "mixins.scss";
 @import "fonts.scss";
 @import "variables.scss";
-@import "mixins.scss";
 @import "global.scss";
+@import "button.scss";
 @import "page-header.scss";
 @import "main-nav.scss";
 @import "intro-program.scss";
@@ -9,4 +11,9 @@
 @import "advantages.scss";
 @import "footer";
 @import "main-catalog.scss";
+@import "catalog-item.scss";
 @import "more-goods.scss";
+@import "comparison.scss";
+@import "additional-goods.scss";
+@import "address.scss";
+@import "map.scss";

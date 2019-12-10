@@ -1,0 +1,16 @@
+
+.map {
+  min-height: 476px;
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    min-height: 597px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    min-height: 400px;
+  }
+}

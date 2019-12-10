@@ -14,10 +14,12 @@
   font-size: 36px;
   line-height: 36px;
   font-weight: normal;
+  text-align: center;
   padding-top: 27px;
   width: 250px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0;
 }
 
 .intro-program__message {
@@ -27,17 +29,18 @@
 }
 
 .intro-program__image {
-  margin-top: -140px;
-}
-
-.intro-program__button {
-  margin-bottom: 22px;
+  margin-top: -139px;
 }
 
 @media (min-width: $tablet-width) {
   .intro-program {
     position: relative;
-    padding-bottom: 590px;
+    padding-bottom: 490px;
+    margin-bottom: 40px;
+  }
+
+  .intro-program .container {
+    position: relative;
   }
 
   .intro-program__wrapper {
@@ -47,7 +50,7 @@
     font-weight: normal;
     margin: 0 auto;
     padding-bottom: 0;
-    padding-left: 90px;
+    padding-left: 87px;
   }
 
   .intro-program__header {
@@ -57,30 +60,44 @@
     width: 427px;
     margin-left: 0;
     padding-left: 0;
+    padding-top: 0;
+    margin-bottom: 44px;
   }
 
   .intro-program__message {
+    @include reset-list;
     font-size: 20px;
     color: #111111;
     text-align: left;
+    margin-bottom: 48px;
   }
 
   .intro-program__button {
-    margin-left: 90px;
+    margin-left: 89px;
+    width: 245px;
+    height: 52px;
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 16px;
   }
 
   .intro-program__image {
     width: 709px;
     height: 609px;
     position: absolute;
-    z-index: -1;
-    bottom: 0;
+    z-index: -2;
+    top: 112px;
+    //left: 40px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .intro-program {
-    padding-bottom: 300px;
+    padding-bottom: 187px;
+  }
+
+  .intro-program .container {
+    position: static;
   }
 
   .intro-program__wrapper {
@@ -89,12 +106,21 @@
     padding-left: 80px;
   }
 
+  .intro-program__message {
+    margin-bottom: 53px;
+  }
+
   .intro-program__image {
     width: 552px;
     height: 499px;
     position: absolute;
     z-index: 0;
-    bottom: 0;
-    margin-left: 475px;
+    bottom: 50px;
+    top: 60px;
+    margin-left: 450px;
+  }
+
+  .intro-program__button {
+    margin-left: 80px;
   }
 }

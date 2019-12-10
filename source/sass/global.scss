@@ -55,7 +55,8 @@ img {
 
 .visually-hidden,
 input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+input[type="radio"].visually-hidden,
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
 
   width: 1px;
@@ -69,10 +70,4 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-.button {
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: $main-green;
 }
