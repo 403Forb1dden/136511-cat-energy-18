@@ -1,0 +1,18 @@
+
+.address {
+  min-height: 114px;
+}
+
+@media (min-width: $tablet-width) {
+  .address {
+    min-height: 201px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .address {
+    position: absolute;
+    width: 570px;
+    background-color: #ffffff;
+  }
+}

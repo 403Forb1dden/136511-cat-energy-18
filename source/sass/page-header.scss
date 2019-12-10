@@ -6,8 +6,8 @@
 
 .page-header__logo img {
   height: 38px;
-  margin-top: 11px;
-  margin-bottom: 15px;
+  margin-top: 13px;
+  margin-bottom: 11px;
 
   &:hover,
   &:focus {
@@ -38,12 +38,13 @@
     flex-direction: row;
 
     width: 768px;
-    margin: 0 auto 40px auto;
+    margin: 0 auto 42px auto;
     padding-left: 30px;
     padding-right: 30px;
   }
 
   .page-header__logo img {
+    width: 174px;
     height: 60px;
     margin-top: 24px;
   }
@@ -56,12 +57,12 @@
 @media (min-width: $desktop-width) {
   .page-header {
     max-width: 1440px;
-    margin: 0 auto 80px auto;
+    margin: 0 auto 61px auto;
   }
 
   .page-header__wrapper {
     width: 1440px;
-    margin: 0 auto 98px auto;
+    margin: 0 auto 60px auto;
     padding-left: 110px;
     padding-right: 110px;
   }
@@ -77,6 +78,7 @@
 
   .page-header__logo img {
     margin-top: 53px;
+    width: 203px;
   }
 }
 

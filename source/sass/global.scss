@@ -72,24 +72,3 @@ input[type="radio"].visually-hidden,
   overflow: hidden;
 }
 
-.button {
-  @include reset-list;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: $main-green;
-  width: 280px;
-  height: 40px;
-  display: inline-block;
-  text-align: center;
-  vertical-align: center;
-  padding-top: 11px;
-
-  &:hover,
-  &:focus {
-    background-color: $color-button-hover-green;
-  }
-
-  &:active {
-    color: rgba(255, 255, 255, 0.3);
-  }
-}

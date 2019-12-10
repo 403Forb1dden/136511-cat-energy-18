@@ -5,7 +5,7 @@
 
 .main-nav__item {
   font-size: 20px;
-  padding-top: 24px;
+  padding-top: 23px;
   padding-bottom: 24px;
   text-transform: uppercase;
   text-align: center;
@@ -37,7 +37,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 440px;
-    margin-top: 47px;
+    margin-top: 46px;
   }
 
   .main-nav__item {
@@ -56,8 +56,8 @@
 
 @media (min-width: $desktop-width) {
   .main-nav__list {
-    margin-top: 75px;
-    width: 490px;
+    margin-top: 76px;
+    width: 479px;
   }
 
   .main-nav__item {
@@ -75,6 +75,7 @@
 @media (max-width: $mobile-width-only) {
   .main-nav {
     position: relative;
+    font-weight: bold;
   }
 
   .main-nav__item {

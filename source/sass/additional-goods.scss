@@ -1,0 +1,16 @@
+
+.additional-goods {
+  min-height: 966px;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-goods {
+    min-height: 1015px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-goods {
+    min-height: 489px;
+  }
+}
