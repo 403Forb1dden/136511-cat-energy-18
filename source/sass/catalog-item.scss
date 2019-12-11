@@ -77,6 +77,12 @@
   }
 }
 
+@media (max-width: $mobile-width-only) {
+  .catalog-item picture {
+    height: 144px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .catalog-item {
     min-height: 431px;
@@ -102,7 +108,7 @@
   }
 
   .catalog-item__image {
-    margin-top: -46px;
+    margin-top: -47px;
     width: 324px;
     height: 172px;
 
@@ -126,7 +132,7 @@
     text-align: center;
     align-self: center;
     margin: 0 auto 14px auto;
-    padding-top: 37px;
+    padding-top: 34px;
   }
 
   .catalog-item__description-line {
