@@ -119,43 +119,84 @@
       </article>
 
       <article class="comparison">
-        <h2 class="comparison__header">Живой пример</h2>
-        <p class="comparison-text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял
-          своих привычек и по-прежнему спит по 16 часов в день. </p>
-        <div class="comparison__weight-loss">
-          <h3>5 Кг</h3>
-          <p>снижение веса</p>
+        <div class="comparison__header-wrapper">
+          <h2 class="comparison__header">Живой пример</h2>
         </div>
-        <div class="comparison__time-spent">
-          <h3>60 дней</h3>
-          <p>затрачено времени</p>
-        </div>
-        <p class="comparison__food-costs">
-          <span>Затраты на питание:</span>
-          <span> 15 000 руб.</span>
-        </p>
-        <img class="comparison__before-img"  src="img/before-mobile@1x.webp" width="311" height="232" alt="Кот До'">
-        <div class="comparison__before-after">
-          <span>Было</span>
-          <div class="comparison__before-after-scale">
-
+        <div class="comparison__desktop-container">
+        <section class="comparison-text-wrapper">
+          <p class="comparison-text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял
+            своих привычек и по-прежнему спит по 16 часов в день. </p>
+          <div class="comparison__input comparison__weight-loss">
+            <h3 class="comparison__input-header">5 Кг</h3>
+            <p class="comparison__input-text">снижение веса</p>
           </div>
-          <span>Стало</span>
+          <div class="comparison__input comparison__time-spent">
+            <h3 class="comparison__input-header">60 дней</h3>
+            <p class="comparison__input-text comparison__input-text--time-spent">затрачено времени</p>
+          </div>
+          <p class="comparison__food-costs">
+            <span>Затраты на питание:</span>
+            <span> 15 000 руб.</span>
+          </p>
+        </section>
+        <section class="comparison__image-wrapper">
+          <picture>
+            <source type="image/webp" media="(min-width: 1300px)"
+                    srcset="img/before-desktop@2x.webp 2x,
+                            img/before-desktop@1x.webp 1x">
+            <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/before-tablet@2x.webp 2x,
+                            img/before-tablet@1x.webp 1x">
+            <source type="image/webp"
+                    srcset="img/before-mobile@2x.webp 2x,
+                            img/before-mobile@1x.webp 1x">
+            <source media="(min-width: 1300px)"
+                    srcset="img/before-desktop@2x.png 2x,
+                            img/before-desktop@1x.png 1x">
+            <source media="(min-width: 768px)"
+                    srcset="img/before-tablet@2x.png 2x,
+                            img/before-tablet@1x.png 1x">
+            <img class="comparison__before-img"  src="img/before-mobile@1x.png"
+                  srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Кот До'">
+          </picture>
+          <div class="comparison__before-after">
+            <span>Было</span>
+            <div class="comparison__before-after-scale">
+            </div>
+            <span>Стало</span>
+          </div>
+        </section>
         </div>
       </article>
 
     </main>
 
     <footer class="footer">
-      <div class="footer__map">
-        <div class="footer__map-address address">
-          <h2 class="footer__map-header">Приглашаем
-            к сотрудничеству
-            дилеров!</h2>
-          <p class="footer__map-text">ул. Большая Конюшенная, д. 19/8
-            Санкт-Петербург</p>
+      <div class="footer__map footer__map--main-page">
+        <div class="footer__address-wrapper container">
+          <div class="footer__map-address footer__map-address--main-page">
+            <h2 class="footer__map-header">Приглашаем<br>
+              к сотрудничеству
+              дилеров!</h2>
+            <p class="footer__map-text">ул. Большая Конюшенная, д. 19/8
+              <span class="footer__map-text-br">Санкт-Петербург</span>
+          </div>
         </div>
-        <img src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Местоположение на карте">
+        <picture>
+          <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@2x.webp 2x,
+        img/bg-map-desktop@1x.webp 1x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@2x.webp 2x,
+        img/bg-map-tablet@1x.webp 1x">
+          <source type="image/webp" srcset="img/bg-map-mobile@2x.webp 2x,
+        img/bg-map-mobile@1x.webp 1x">
+          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@2x.png 2x,
+        img/bg-map-desktop@1x.png 1x">
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@2x.png 2x,
+        img/bg-map-tablet@1x.png 1x">
+          <img class="footer__map-image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
+                width="320" height="400" alt="Местоположение на карте">
+        </picture>
+        <iframe class="footer__map-iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.3018930805114!2d30.321953041226962!3d59.93871650000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1577227749746!5m2!1sru!2sru" width="320" height="362" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
       </div>
       <div class="footer__wrapper container">
         <a class="footer__logo-energy footer__logo-energy--active">
@@ -163,27 +204,27 @@
         </a>
         <ul class="footer__social">
           <li class="footer__social-item">
-            <a class="footer__social-link footer__social-link--vkontakte" href="https://vk.com/htmlacademy">
+            <a class="footer__social-link footer__social-link--vkontakte" href="https://vk.com/htmlacademy" target="_blank">
               <span class="visually-hidden">Мы в Контакте</span>
               <svg width="22" height="12"><use xlink:href="img/sprite.svg#icon-vk"></use></svg>
             </a>
           </li>
           <li class="footer__social-item">
-            <a class="footer__social-link footer__social-link--instagram" href="https://www.instagram.com/htmlacademy">
+            <a class="footer__social-link footer__social-link--instagram" href="https://www.instagram.com/htmlacademy" target="_blank">
               <span class="visually-hidden">Мы в Инстаграме</span>
               <svg width="17" height="17"><use xlink:href="img/sprite.svg#icon-insta"></use></svg>
             </a>
           </li>
           <li class="footer__social-item">
-            <a class="footer__social-link footer__social-link--facebook" href="https://www.facebook.com/htmlacademy">
+            <a class="footer__social-link footer__social-link--facebook" href="https://www.facebook.com/htmlacademy" target="_blank">
               <span class="visually-hidden">Мы в Фейсбуке</span>
               <svg width="10" height="19"><use xlink:href="img/sprite.svg#icon-fb"></use></svg>
             </a>
           </li>
         </ul>
         <div class="footer__logo-academy">
-          <a class="footer__name-academy" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a class="footer__img-academy" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="footer__name-academy" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
+          <a class="footer__img-academy" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
             <svg width="26.943" height="34.09"><use xlink:href="img/sprite.svg#icon-htmlacademy"></use></svg>
           </a>
         </div>

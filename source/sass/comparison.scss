@@ -1,17 +1,355 @@
 
 .comparison {
+  margin: 0 auto;
   min-height: 705px;
+  padding: 30px 0 36px 0;
   background-color: $color-grey;
 }
+
+.comparison__header {
+  margin: 0 auto 35px auto;
+  width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: normal;
+}
+
+.comparison-text-wrapper {
+  width: 320px;
+  margin: 0 auto 35px auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.comparison-text {
+  margin: 0 0 25px 0;
+  width: 268px;
+  font-size: 14px;
+  line-height: 18px;
+  color: $greyish-brown;
+  font-family: "Arial", sans-serif;
+}
+
+.comparison__input {
+  position: relative;
+  display: inline-block;
+  padding-top: 13px;
+  width: 124px;
+  height: 56px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px 3px;
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+.comparison__input-header {
+  margin: 0;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.comparison__input-text {
+  position: absolute;
+  margin: 0;
+  min-width: 87px;
+  width: 87px;
+  font-size: 12px;
+  line-height: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+  font-family: "Arial", sans-serif;
+  color: $greyish-brown;
+  top: 46px;
+  left: 16px;
+  background-color: $color-grey;
+
+  //&:first-child {
+  //  min-width: 55px;
+  //  width: 55px;
+  //}
+}
+
+.comparison__food-costs {
+  margin: 0 0 0 47px;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.comparison__before-img {
+  display: block;
+  width: 320px;
+  margin: 0 auto 31px auto;
+}
+
+.comparison__before-after {
+  width: 200px;
+  margin: 0 auto;
+  padding-left: 2px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.comparison__before-after-scale {
+  position: relative;
+  width: 84px;
+  margin-left: 4px;
+  height: 12px;
+
+  border: 1px solid #cdcdcd;
+  border-radius: 6px;
+  background-color: #ffffff;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 36px;
+    height: 6px;
+    top: 2px;
+    left: 5px;
+    background-color: $main-green;
+    border-radius: 3px;
+  }
+}
+
 
 @media (min-width: $tablet-width) {
   .comparison {
     min-height: 1081px;
+    padding: 43px 0 0 0;
+    background-color: #ffffff;
+    border-top: 1px solid $color-border-grey;
+  }
+
+  .comparison__header {
+    margin: 0 auto 65px auto;
+    width: 768px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .comparison-text-wrapper {
+    width: 768px;
+    margin: 0 auto 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 255px;
+
+    justify-content: normal;
+    align-items: center;
+  }
+
+  .comparison-text {
+    margin: 0 0 52px 0;
+    width: 678px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .comparison__input {
+    padding-top: 20px;
+    width: 162px;
+    height: 72px;
+    margin-bottom: 0;
+    margin-right: 42px;
+  }
+
+  .comparison__input-header {
+    margin: 0;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .comparison__input-text {
+    position: absolute;
+    margin: 0;
+    width: 114px;
+    padding: 8px 7px 8px 7px;
+    font-size: 14px;
+    line-height: 14px;
+    top: 54px;
+    left: 22px;
+    background-color: #ffffff;
+
+    &--time-spent {
+      width: 142px;
+      left: 9px;
+    }
+  }
+
+  .comparison__food-costs {
+    margin: 0 0 0 auto;
+    width: 176px;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: right;
+  }
+
+  .comparison__image-wrapper {
+    position: relative;
+    min-height: 462px;
+    background-image: linear-gradient(to right, $color-grey 50%, #eaeaea 50%);
+  }
+
+  .comparison__before-img {
+    position: absolute;
+    width: 690px;
+    height: 517px;
+    top: -169px;
+    padding-left: 10px;
+    margin-bottom: 21px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .comparison__before-after {
+    width: 570px;
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 369px;
+    padding-left: 0;
+  }
+
+  .comparison__before-after-scale {
+    position: relative;
+    width: 428px;
+    height: 6px;
+
+    border-radius: 2.5px;
+    background-color: #dcdcdc;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 8px;
+      height: 8px;
+      top: -2px;
+      left: 209px;
+      background-color: $main-green;
+      border-radius: 100%;
+      z-index: 2;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 32px;
+      height: 32px;
+      background-color: #ffffff;
+      border: 1px solid #cdcdcd;
+      border-radius: 100%;
+      top: -14px;
+      left: 197px;
+      z-index: 1;
+
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    }
+
+    &:hover::after,
+    &:focus::after {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:active::after {
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+      border: 2px solid $main-green;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .comparison {
     min-height: 622px;
+    padding: 0 0 0 0;
+    border-top: none;
+
+    background-image: linear-gradient(to right, $color-grey 70%, #eaeaea 70%);
+  }
+
+  .comparison__header-wrapper {
+    background-color: #ffffff;
+  }
+
+  .comparison__header {
+    margin: 0 auto 0 auto;
+    width: 1300px;
+    padding: 25px 40px 75px 40px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .comparison__desktop-container {
+    width: 1220px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+
+    background-image: linear-gradient(to right, $color-grey 935px, #eaeaea 935px);
+  }
+
+  .comparison-text-wrapper {
+    width: 530px;
+    margin: 0;
+    padding: 69px 0 70px 0;
+    justify-content: normal;
+    align-items: center;
+  }
+
+  .comparison-text {
+    width: 434px;
+    margin-bottom: 70px;
+  }
+
+  .comparison__input {
+    margin-bottom: 42px;
+  }
+
+  .comparison__input-text {
+    background-color: $color-grey;
+  }
+
+  .comparison__food-costs {
+    width: 325px;
+    margin-left: 0;
+    margin-top: 14px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .comparison__image-wrapper {
+    width: 690px;
+    position: relative;
+    min-height: 462px;
+    background-image: none;
+  }
+
+  .comparison__before-img {
+    position: absolute;
+    width: 690px;
+    height: 517px;
+    top: -190px;
+    padding-left: 0;
+    margin-bottom: 21px;
+    left: 385px;
+    transform: translate(-50%);
+  }
+
+  .comparison__before-after {
+    margin: 0 0 0 120px;
   }
 }
