@@ -276,7 +276,7 @@
     </li>
   </ul>
 
-  <section class="additional-goods">
+  <section class="additional-goods container">
     <h2 class="additional-goods__header">Дополнительные товары</h2>
     <ul class="additional-goods__list">
       <li class="additional-goods__item">
@@ -284,38 +284,36 @@
         <div class="additional-goods__description-line">
           <p class="additional-goods__label">1 упаковка (100 г)</p>
           <p class="additional-goods__value">200 Р.</p>
-          <a class="button additional-goods__button" href="#">Заказать</a>
         </div>
+        <a class="button additional-goods__button" href="#">Заказать</a>
       </li>
       <li class="additional-goods__item">
         <h3 class="additional-goods__name">Питьевая вода</h3>
         <div class="additional-goods__description-line">
           <p class="additional-goods__label">5 литров</p>
           <p class="additional-goods__value">50 Р.</p>
-          <a class="button additional-goods__button" href="#">Заказать</a>
         </div>
+        <a class="button additional-goods__button" href="#">Заказать</a>
       </li>
       <li class="additional-goods__item">
         <h3 class="additional-goods__name">Молоко</h3>
         <div class="additional-goods__description-line">
           <p class="additional-goods__label">1 литр</p>
           <p class="additional-goods__value">100 Р.</p>
-          <a class="button additional-goods__button" href="#">Заказать</a>
-
         </div>
+        <a class="button additional-goods__button" href="#">Заказать</a>
       </li>
       <li class="additional-goods__item">
         <h3 class="additional-goods__name">Витамины</h3>
         <div class="additional-goods__description-line">
           <p class="additional-goods__label">1 упаковка (30 г)</p>
           <p class="additional-goods__value">300 Р.</p>
-          <a class="button additional-goods__button" href="#">Заказать</a>
         </div>
+        <a class="button additional-goods__button" href="#">Заказать</a>
       </li>
     </ul>
     <div class="additional-goods__gift">
-      <img class="additional-goods__gift-img" src="img/gift-photo-mobile@1x.jpg" width="280" height="289" alt="Кот в стиральной машинке">
-      <p class="additional-goods__gift-text">Закажите все и получите чехол для кота в подарок!</p>
+      <p class="additional-goods__gift-text">Закажите все<br> и получите чехол для кота в подарок!</p>
     </div>
   </section>
 
@@ -323,14 +321,30 @@
 
 <footer class="footer">
   <div class="footer__map">
-    <div class="footer__map-address address">
-      <h2 class="footer__map-header">Приглашаем
-        к сотрудничеству
-        дилеров!</h2>
-      <p class="footer__map-text">ул. Большая Конюшенная, д. 19/8
-        Санкт-Петербург</p>
+    <div class="footer__address-wrapper container">
+      <div class="footer__map-address">
+        <h2 class="footer__map-header">Приглашаем<br>
+          к сотрудничеству
+          дилеров!</h2>
+        <p class="footer__map-text">ул. Большая Конюшенная, д. 19/8
+          <span class="footer__map-text-br">Санкт-Петербург</span>
+      </div>
     </div>
-    <img src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Местоположение на карте">
+    <picture>
+      <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@2x.webp 2x,
+        img/bg-map-desktop@1x.webp 1x">
+      <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-map-tablet@2x.webp 2x,
+        img/bg-map-tablet@1x.webp 1x">
+      <source type="image/webp" srcset="img/bg-map-mobile@2x.webp 2x,
+        img/bg-map-mobile@1x.webp 1x">
+      <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@2x.png 2x,
+        img/bg-map-desktop@1x.png 1x">
+      <source media="(min-width: 768px)" srcset="img/bg-map-tablet@2x.png 2x,
+        img/bg-map-tablet@1x.png 1x">
+      <img class="footer__map-image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x"
+        width="320" height="400" alt="Местоположение на карте">
+    </picture>
+    <iframe class="footer__map-iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.3018930805114!2d30.321953041226962!3d59.93871650000002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1577227749746!5m2!1sru!2sru" width="320" height="362" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
   </div>
   <div class="footer__wrapper container">
     <a class="footer__logo-energy" href="index.html">
@@ -338,27 +352,27 @@
     </a>
     <ul class="footer__social">
       <li class="footer__social-item">
-        <a class="footer__social-link footer__social-link--vkontakte" href="https://vk.com/htmlacademy">
+        <a class="footer__social-link footer__social-link--vkontakte" href="https://vk.com/htmlacademy" target="_blank">
           <span class="visually-hidden">Мы в Контакте</span>
           <svg width="22" height="12"><use xlink:href="img/sprite.svg#icon-vk"></use></svg>
         </a>
       </li>
       <li class="footer__social-item">
-        <a class="footer__social-link footer__social-link--instagram" href="https://www.instagram.com/htmlacademy">
+        <a class="footer__social-link footer__social-link--instagram" href="https://www.instagram.com/htmlacademy" target="_blank">
           <span class="visually-hidden">Мы в Инстаграме</span>
           <svg width="17" height="17"><use xlink:href="img/sprite.svg#icon-insta"></use></svg>
         </a>
       </li>
       <li class="footer__social-item">
-        <a class="footer__social-link footer__social-link--facebook" href="https://www.facebook.com/htmlacademy">
+        <a class="footer__social-link footer__social-link--facebook" href="https://www.facebook.com/htmlacademy" target="_blank">
           <span class="visually-hidden">Мы в Фейсбуке</span>
           <svg width="10" height="19"><use xlink:href="img/sprite.svg#icon-fb"></use></svg>
         </a>
       </li>
     </ul>
     <div class="footer__logo-academy">
-      <a class="footer__name-academy" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      <a class="footer__img-academy" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="footer__name-academy" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
+      <a class="footer__img-academy" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
         <svg width="26.943" height="34.09"><use xlink:href="img/sprite.svg#icon-htmlacademy"></use></svg>
       </a>
     </div>

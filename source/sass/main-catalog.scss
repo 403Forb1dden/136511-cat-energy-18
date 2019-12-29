@@ -1,7 +1,7 @@
 .main-catalog {
   padding-top: 27px;
   min-width: 320px;
-  margin: 0 auto;
+  margin: 0 auto 35px auto;
 }
 
 .main-catalog__header {
@@ -19,7 +19,7 @@
   @include reset-list;
 
   width: 320px;
-  margin: 0 auto;
+  margin: 0 auto 28px auto;
 }
 
 .main-catalog__item {
@@ -30,6 +30,7 @@
 @media (min-width: $tablet-width) {
   .main-catalog {
     padding-top: 0;
+    margin-bottom: 3px;
   }
 
   .main-catalog__list {
@@ -37,7 +38,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 70px;
+    margin-bottom: 67px;
   }
 
   .main-catalog__item {
@@ -55,12 +56,16 @@
 }
 
 @media (min-width: $desktop-width) {
+  .main-catalog {
+    margin-bottom: 0;
+  }
+
   .main-catalog__list {
     min-width: 1220px;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: normal;
-    margin-bottom: 78px;
+    margin-bottom: 75px;
   }
 
   .main-catalog__header {
