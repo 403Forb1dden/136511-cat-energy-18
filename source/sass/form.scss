@@ -78,6 +78,12 @@
   border: none;
   padding: 0;
   margin: 0;
+}
+
+.form__fieldset-wrapper {
+  border: none;
+  padding: 0;
+  margin: 0;
 
   &--green-line {
     position: relative;
@@ -92,10 +98,6 @@
     background-color: $main-green;
     z-index: -1;
   }
-}
-
-.form__fieldset--radio {
-  border: 1px solid #ededed;
 }
 
 .form__characteristics-list {
@@ -417,7 +419,6 @@
 
   .form__icon {
     position: absolute;
-    //left: 177px;
     right: 19px;
     top: 19px;
 
@@ -580,3 +581,4 @@
     margin-left: 82px;
   }
 }
+
