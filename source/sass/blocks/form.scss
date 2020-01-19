@@ -13,6 +13,8 @@
   border: 1px solid $color-border-grey;
   height: 45px;
 
+  outline: none;
+
   &::placeholder {
     color: $greyish-brown;
   }
@@ -149,6 +151,11 @@
   &:hover::before {
     border-color: #bababa;
   }
+}
+
+.form__target-input:focus ~ label::before,
+.form__additionally-input:focus ~ label::before {
+  border-color: #bababa;
 }
 
 .form__target-input[type="radio"]:checked ~ label::after {
