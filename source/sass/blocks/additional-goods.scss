@@ -183,6 +183,8 @@
     min-height: 200px;
     padding-left: 424px;
     padding-top: 72px;
+
+    margin-bottom: 73px;
     background: #64a83b url("../../img/gift-photo-tablet@1x.jpg") left top no-repeat;
     background-size: 708px auto;
 
@@ -209,6 +211,11 @@
 @media (min-width: $desktop-width) {
   .additional-goods {
     min-height: 491px;
+  }
+
+  .additional-goods__wrapper {
+    display: inline-block;
+    width: 1220px;
   }
 
   .additional-goods__header {
@@ -241,6 +248,7 @@
     width: 895px;
     display: inline-block;
     float: left;
+    margin-bottom: 86px;
   }
 
   .additional-goods__item {

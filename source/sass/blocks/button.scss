@@ -4,11 +4,12 @@
   color: #ffffff;
   background-color: $main-green;
   width: 280px;
-  height: 40px;
+  min-height: 40px;
   display: inline-block;
   text-align: center;
   vertical-align: center;
   padding-top: 11px;
+  padding-bottom: 11px;
 
   &:hover,
   &:focus {
