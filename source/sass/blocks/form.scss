@@ -19,17 +19,34 @@
     color: $greyish-brown;
   }
 
-  &:invalid {
-    border: 2px solid #ff8282;
-  }
-
   &:hover,
   &:focus {
     border: 1px solid #cdcdcd;
+    outline: none;
   }
 
   &:active {
-    border: 2px solid $greyish-brown;
+    border: 1px solid $greyish-brown;
+    outline: 3px solid $greyish-brown;
+  }
+}
+
+//Стиль для навешивания класса "js-input-error" на инпут если поля не заполнены или заполнены некорректно
+.form .js-input-error {
+  &:invalid {
+    border: 1px solid #ff8282;
+    outline: 2px solid #ff8282;
+  }
+
+  &:hover:invalid {
+    border: 1px solid #ff8282;
+    outline: 2px solid #ff8282;
+  }
+
+  &:focus:invalid,
+  &:active:invalid {
+    border: 1px solid #ff8282;
+    outline: 3px solid #ff8282;
   }
 }
 
@@ -226,7 +243,8 @@
     right: 12px;
   }
 
-  .form__contacts-input:invalid ~ & {
+  .js-input-error:invalid ~ &,
+  .js-input-error:invalid:active ~ & {
     fill: red;
   }
 
