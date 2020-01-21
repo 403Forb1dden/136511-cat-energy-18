@@ -4,12 +4,17 @@
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
+  <script src="js/picturefill.min.js"></script>
+  <script src="js/svg4everybody.min.js"></script>
+  <script>svg4everybody();</script>
 </head>
 <body>
 
 <header class="page-header">
-  <div class="page-header__wrapper main-nav--closed main-nav--nojs">
+  <div class="page-header__wrapper main-nav main-nav--closed main-nav--nojs">
     <div class="page-header__container">
       <a class="page-header__logo" href="index.html">
         <picture>
@@ -45,20 +50,20 @@
   <fieldset class="form__fieldset">
     <ul class="form__characteristics-list">
       <li class="form__characteristics-item">
-        <label for="label-name">Имя:*</label>
+        <label class="form__characteristics-label" for="label-name">Имя:*</label>
         <input class="form__characteristics-input form__characteristics-input--name" type="text" name="name" id="label-name" placeholder="Барсик" required>
       </li>
       <li class="form__characteristics-item">
-        <label class="form__characteristics-label--weight" for="label-weight">Вес (Кг):*</label>
+        <label class="form__characteristics-label" for="label-weight">Вес (Кг):*</label>
         <input class="form__characteristics-input form__characteristics-input--weight" type="number" name="weight" id="label-weight" placeholder="7" required>
       </li>
       <li class="form__characteristics-item">
-        <label class="form__characteristics-label--age" for="label-age">Возраст (Лет):</label>
+        <label class="form__characteristics-label" for="label-age">Возраст (Лет):</label>
         <input class="form__characteristics-input form__characteristics-input--age" type="number" name="age" id="label-age" placeholder="7">
       </li>
     </ul>
   </fieldset>
-  <fieldset class="form__fieldset form-fieldset--radio">
+  <fieldset class="form__fieldset">
     <ul class="form__target-list">
       <li class="form__target-item">
         <input class="form__target-input visually-hidden" type="radio" name="target" id="label-weight-loss" checked>
@@ -75,12 +80,12 @@
     </ul>
   </fieldset>
   </div>
-  <div class="form__fieldset--green-line">
+  <div class="form__fieldset-wrapper form__fieldset-wrapper--green-line">
     <fieldset class="form__fieldset">
       <legend class="form__legend container container--form"><span class="form__legend-span">Контактные данные (владельца кота)</span></legend>
       <ul class="form__contacts-list container container--form">
         <li class="form__contacts-item">
-          <label class="form__contacts-label--email" for="label-email">E-mail:*</label>
+          <label class="form__contacts-label" for="label-email">E-mail:*</label>
           <input class="form__contacts-input form__contacts-input--email" type="email" name="email" id="label-email" placeholder="kuklachev@gmail.com" required>
           <svg class="form__icon" width="18" height="14"><use xlink:href="img/sprite.svg#icon-mail"></use></svg>
         </li>
@@ -92,14 +97,14 @@
       </ul>
     </fieldset>
   </div>
-  <div class="form__fieldset--green-line">
+  <div class="form__fieldset-wrapper form__fieldset-wrapper--green-line">
     <fieldset class="form__fieldset">
       <legend class="form__legend container container--form"><span class="form__legend-span form__legend-span--comment">Комментарий</span></legend>
       <label for="form-textarea"></label>
       <textarea class="form__textarea container container--form" id="form-textarea" cols="40"  placeholder="Расскажите обо всех повадках кота"></textarea>
     </fieldset>
   </div>
-  <div class="form__fieldset--green-line">
+  <div class="form__fieldset-wrapper form__fieldset-wrapper--green-line">
     <fieldset class="form__fieldset">
       <legend class="form__legend form__legend--additional container container--form"><span class="form__legend-span form__legend-span--additional">Дополнительно</span></legend>
       <ul class="form__additionally-list  container container--form">
