@@ -26,7 +26,7 @@
       content: "";
       width: 35px;
       height: 49px;
-      background: url("../img/icon-cat-slim.svg") no-repeat;
+      background: url("../../img/icon-cat-slim.svg") no-repeat;
       top: 22px;
       left: 30px;
     }
@@ -38,7 +38,7 @@
       content: "";
       width: 67px;
       height: 50px;
-      background: url("../img/icon-cat-pro.svg") no-repeat;
+      background: url("../../img/icon-cat-pro.svg") no-repeat;
       top: 35px;
       left: 13px;
     }
@@ -72,7 +72,7 @@
   &::after {
     position: absolute;
     content: "";
-    background: url("../img/icon-right-arrow-long.svg") no-repeat;
+    background: url("../../img/icon-right-arrow-long.svg") no-repeat;
     width: 25px;
     height: 12px;
     right: -36px;
@@ -81,7 +81,7 @@
 
   &:hover::after,
   &:focus::after {
-    background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
+    background: url("../../img/icon-right-arrow-verylong.svg") no-repeat;
     width: 34px;
     height: 12px;
     right: -45px;
@@ -178,18 +178,19 @@
 
 @media (min-width: $desktop-width) {
   .about-catalog {
-    margin-bottom: 43px;
+    margin-bottom: 0;
   }
 
   .about-catalog__wrapper {
     width: 1220px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
   .about-catalog__item {
     width: 570px;
-    margin-bottom: 30px;
+    margin-bottom: 73px;
     padding: 76px 56px 62px 52px;
     min-height: 372px;
 

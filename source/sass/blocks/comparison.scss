@@ -206,21 +206,25 @@
   }
 
   .comparison__before-img {
-    position: absolute;
+    position: relative;
     width: 690px;
     height: 517px;
     top: -169px;
+    margin-top: 0;
     padding-left: 10px;
     margin-bottom: 21px;
-    left: 50%;
-    transform: translate(-50%);
+    left: 0;
+    transform: translate(0);
   }
 
   .comparison__before-after {
     width: 570px;
     font-size: 20px;
     line-height: 20px;
-    padding-top: 369px;
+    //padding-top: 369px;
+    margin-top: -171px;
+    padding-bottom: 69px;
+    //margin-bottom: 369px;
     padding-left: 0;
   }
 
@@ -345,11 +349,11 @@
     top: -190px;
     padding-left: 0;
     margin-bottom: 21px;
-    left: 385px;
-    transform: translate(-50%);
+    left: 40px;
+    transform: translate(0);
   }
 
   .comparison__before-after {
-    margin: 0 0 0 120px;
+    margin: 368px 0 0 120px;
   }
 }

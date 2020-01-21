@@ -77,19 +77,16 @@
     top: 0;
     left: 50%;
     z-index: -1;
-    background: #64a83b url("../img/index-background-desktop@1x.jpg") left top no-repeat;
+    background: #64a83b url("../../img/index-background-desktop@1x.jpg") left top no-repeat;
     background-size: 720px auto;
 
     @media (min-resolution: $retina-dppx) {
-      background: #64a83b url("../img/index-background-desktop@2x.jpg") left top no-repeat;
+      background: #64a83b url("../../img/index-background-desktop@2x.jpg") left top no-repeat;
       background-size: 720px auto;
     }
   }
 
   // Стили для главной страницы
-  .page-header__main-page--color {
-    color: #ffffff;
-  }
 
   .page-header__logo img {
     margin-top: 53px;
