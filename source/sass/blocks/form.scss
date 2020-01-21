@@ -59,7 +59,7 @@
 
 .form input {
   padding: 15px 45px 15px 14px;
-  margin: 0 0 0 16px;
+  margin: 0 0 0 15px;
   flex-grow: 1;
 
   &::placeholder {
@@ -229,7 +229,7 @@
   margin-bottom: 14px;
 
   .form__contacts-input {
-    margin-left: 11px;
+    margin-left: 8px;
   }
 }
 
@@ -409,9 +409,9 @@
 
     .form__legend-span {
       display: block;
-      width: 592px;
+      width: 594px;
       padding-left: 40px;
-      padding-right: 36px;
+      padding-right: 34px;
       background-color: #ffffff;
 
       &--comment {
